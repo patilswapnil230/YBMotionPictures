@@ -14,7 +14,7 @@
     -webkit-transition: all 0.4s;
     padding: 0;
     // background: $white-color;
-    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
     .navbar-brand{
         font-weight: $font-weight-bold;
@@ -309,7 +309,7 @@
         .ybLogo {
         width: 200px;
         height: 100px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo480.png);
+        background-image: url(/assets/img/ybLogo/ybLogo480.png);
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 15px;
@@ -323,7 +323,7 @@
     .navbar-brand {
         .ybLogo {
         width: 325px;    height: 55px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo480.png);
+        background-image: url(/assets/img/ybLogo/ybLogo480.png);
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 15px;
@@ -341,7 +341,7 @@
         .ybLogo{   
             width: 340px;
             height: 90px;
-            background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo1024.png);
+            background-image: url(/assets/img/ybLogo/ybLogo1024.png);
             background-repeat: no-repeat;
             background-size: contain;
             margin-top: 15px;
@@ -352,7 +352,7 @@
     .navbar-brand {.ybLogo {    
         width: 340px;
         height: 90px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo1024.png);
+        background-image: url(/assets/img/ybLogo/ybLogo1024.png);
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 15px;
@@ -363,7 +363,7 @@
     .navbar-brand {.ybLogo{ 
         width: 340px;
         height: 90px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo.png);
+        background-image: url(/assets/img/ybLogo/ybLogo.png);
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 15px;
@@ -549,9 +549,9 @@
     }
 }
 .navbar-transparent{
-    background: transparent !important;
-    border-bottom: 1px solid transparent;
-    box-shadow: none;
+    // background: transparent !important;
+    // border-bottom: 1px solid transparent;
+    // box-shadow: none;
 
     .dropdown-menu .divider{
         background-color: rgba($white-color,.2);
