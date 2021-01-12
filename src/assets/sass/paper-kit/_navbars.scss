@@ -302,71 +302,33 @@
 
 
 @media (min-width: 320px) {
-    .navbar-toggler {
-    margin-top: -60px;
-}
     .navbar-brand {
-        .ybLogo {
+        img {
         width: 200px;
-        height: 100px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo480.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 15px;
-        }
+        height: 100px;}
     }
 }
 
 @media (min-width: 576px) {
-
-    
     .navbar-brand {
-        .ybLogo {
-        width: 325px;    height: 55px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo480.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 15px;
-    }
+        img {
+        width: 325px;    height: 55px;}
     }
 }
-
-
 
 @media (min-width: 768px) {
-    .navbar-toggler {
-    margin-top: -15px;
-}
     .navbar-brand {
-        .ybLogo{   
-            width: 340px;
-            height: 90px;
-            background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo1024.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-top: 15px;
+        img{    width: 325px;    height: 55px;
     }} 
 }
 
 @media (min-width: 992px) {
-    .navbar-brand {.ybLogo {    
-        width: 340px;
-        height: 90px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo1024.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 15px;
+    .navbar-brand {img {    width: 325px;    height: 55px;
     }} 
 }
 
 @media (min-width: 1200px){
-    .navbar-brand {.ybLogo{ 
-        width: 340px;
-        height: 90px;
-        background-image: url(http://localhost:4201/assets/img/ybLogo/ybLogo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 15px;
+    .navbar-brand {img{    width: 325px;    height: 55px;
     }} 
 }
 
