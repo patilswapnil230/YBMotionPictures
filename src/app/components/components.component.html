@@ -7,7 +7,8 @@
                 <div class="row">
                     <div class="title-brand">
                         <div class="angular-logo">
-                            <img class="ybbannerlogo" src="assets/img/ybBannerLogo.png" alt="">
+                            <!-- <img class="ybbannerlogo" alt=""> -->
+                            <div class="ybbannerlogo"></div>
                         </div>
                         <!-- <h1 class="presentation-title">Imagination to Reality</h1> -->
                         <!-- <div class="fog-low">
@@ -21,19 +22,23 @@
                 <div class="row">
                     <div class="home-content">
                             <div class="col-md-12 mr-auto ml-auto">
-                                <div class="card page-carousel">
+                                <div class="card page-carousel" style="    background-color: #441917;">
                                     <ngb-carousel>
                                         <ng-template ngbSlide>
                                             <div class="row">
-                                              <div class="col-md-12">
+                                              <div class="col-md-12" style="min-height: 60px;padding: 50px 0px 0px 50px;    color: white;
+                                              ">
                                                 <!-- <p>Somewhere</p> -->
-                                                Display Project Title
+                                               <span style="font-size: 30px;"> UPCOMING </span>  <br>
+                                               <span style="font-size: 40px;font-weight: bold;">PROJECTS</span>
+                                                
                                               </div>
                                             </div>
                                             <div class="row">
-                                              <div class="col-md-8">
+                                              <div class="col-md-8"     style="padding: 30px 50px 50px 50px;">
                                                 <!-- <p>Somewhere</p> -->
-                                                <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
+                                                <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide"
+                                                style="border-radius: 0px;">
                                               </div>
                                               <div class="col-md-4">
                                                 <!-- <p>Somewhere</p> -->
@@ -41,7 +46,7 @@
                                               </div>
                                             </div>
                                         </ng-template>
-                                        <ng-template ngbSlide>
+                                        <!-- <ng-template ngbSlide>
                                             <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
                                             <div class="carousel-caption">
                                                 <p>Somewhere else Hero</p>
@@ -52,7 +57,7 @@
                                             <div class="carousel-caption">
                                                 <p>Here it is</p>
                                             </div>
-                                        </ng-template>
+                                        </ng-template> -->
                                     </ngb-carousel>
                                 </div>
                             </div>
@@ -74,7 +79,7 @@
     <div class="main">
       <app-basicelements></app-basicelements>
       <app-navigation></app-navigation>
-      <div class="section">
+      <div class="section" id="AboutUs">
           <div class="container">
               <div class="row">
                   <div class="col-md-6">
