@@ -31,9 +31,11 @@ export class AppComponent implements OnInit {
             if (number > 150 || window.pageYOffset > 150) {
                 // add logic
                 navbar.classList.remove('navbar-transparent');
+                navbar.classList.add('navbar-hidden');
             } else {
                 // remove logic
                 navbar.classList.add('navbar-transparent');
+                navbar.classList.remove('navbar-hidden');
             }
         });
         var ua = window.navigator.userAgent;
