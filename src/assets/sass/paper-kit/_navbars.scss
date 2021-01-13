@@ -53,9 +53,8 @@
             margin: $navbar-margin-a;
             padding: $navbar-padding-a;
             opacity: .8;
-            font-size: $font-size-small;
+            font-size: $font-size-medium;
             text-transform: uppercase;
-            font-weight: 600;
             color: $default-color;
          }
         .nav-item .nav-link.btn{
@@ -166,7 +165,7 @@
         &:hover{
             background-color: transparent;
             @include opacity(1);
-            color: $white-color;
+            color: $yellow-menu-color;
         }
     }
 
@@ -181,7 +180,7 @@
         .nav-item .nav-link:hover,
         .nav-item .nav-link:focus{
             background-color: transparent;
-            color: $white-color;
+            color: $yellow-menu-color;
             @include opacity(1);
         }
         .nav .nav-item a.btn:hover{
@@ -199,7 +198,7 @@
         .open .nav-link:hover,
         .open .nav-link:focus {
             background-color: transparent;
-            color: $default-color;
+            color: $yellow-menu-color;
             @include opacity(1);
         }
     }
