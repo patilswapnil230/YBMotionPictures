@@ -301,6 +301,12 @@
 }
 
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1330px;
+    }
+}
+
 @media (min-width: 320px) {
     .navbar-toggler {
     margin-top: -60px;
@@ -361,8 +367,8 @@
 
 @media (min-width: 1200px){
     .navbar-brand {.ybLogo{ 
-        width: 340px;
-        height: 90px;
+        width: 531px;
+        height: 137px;
         background-image: url(/dist/assets/img/ybLogo/ybLogo.png);
         background-repeat: no-repeat;
         background-size: contain;
