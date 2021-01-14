@@ -286,8 +286,8 @@
 @media (min-width: 768px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 136px;
-            width: 335px;
+            height: 235px;
+            width: 520px;
             background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -396,7 +396,35 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 320px) {
+    .card,
+    .page-carousel {
+        border-radius: 0px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .card,
+    .page-carousel {
+        border-radius: 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .card,
+    .page-carousel {
+        border-radius: 0px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .card,
+    .page-carousel {
+        border-radius: 0px !important;
+    }
+}
+
+@media (min-width:1200px) {
     .card,
     .page-carousel {
         border-radius: 0px !important;
