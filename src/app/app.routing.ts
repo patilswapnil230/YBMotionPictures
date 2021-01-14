@@ -8,11 +8,13 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutYbmpComponent } from './components/aboutus/about-ybmp/about-ybmp.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home',             component: ComponentsComponent },
-    { path: 'aboutus',             component: ComponentsComponent },
+    { path: 'home',             component: HomeComponent },
+    { path: 'aboutus',             component: AboutYbmpComponent },
     { path: 'projects',             component: ComponentsComponent },
     { path: 'contactus',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },

@@ -2,10 +2,10 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" style="margin-top: -2%;" [routerLink]="['/']">
-                
+
                 <!-- <img src="assets/img/ybLogo.png" alt=""> -->
                 <div class="ybLogo"></div>
-            
+
             </a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
@@ -25,22 +25,30 @@
                         </ul> -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a [routerLink]="['/']" class="nav-link" target="_blank">Home </a>
+                    <a [routerLink]="['/']" class="nav-link">Home </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#AboutUs" class="nav-link">
                        About Us</a>
-                </li>
+                </li> -->
                 <div class="nav-item dropdown" ngbDropdown>
-                    <div aria-haspopup="true" class="nav-link dropdown-toggle" 
-                    ngbDropdownToggle aria-expanded="true">Projects</div><div  
-                    class="dropdown-menu dropdown-menu-right" style="height: auto!important;" ngbDropdownMenu>
-                
-                    <a class="dropdown-item">Upcoming</a>
-                    <a class="dropdown-item">In Progress</a>
-                    <a class="dropdown-item">Completed</a></div></div>                                       
-                        
-                        <li class="nav-item">
+                    <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">About Us</div>
+                    <div class="dropdown-menu dropdown-menu-right" style="height: auto!important;" ngbDropdownMenu>
+
+                        <a class="dropdown-item" [routerLink]="['/aboutus']">About YBMP</a>
+                        <a class="dropdown-item">Gallery</a>
+                        <a class="dropdown-item">Careers</a></div>
+                </div>
+                <div class="nav-item dropdown" ngbDropdown>
+                    <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">Projects</div>
+                    <div class="dropdown-menu dropdown-menu-right" style="height: auto!important;" ngbDropdownMenu>
+
+                        <a class="dropdown-item">Upcoming</a>
+                        <a class="dropdown-item">In Progress</a>
+                        <a class="dropdown-item">Completed</a></div>
+                </div>
+
+                <li class="nav-item">
                     <a [routerLink]="['/contactus']" class="nav-link" target="_blank">
                         Contact Us</a>
                 </li>
