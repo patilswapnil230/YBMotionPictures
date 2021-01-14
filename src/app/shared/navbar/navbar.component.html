@@ -2,35 +2,26 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" style="margin-top: -2%;" [routerLink]="['/']">
-
-                <!-- <img src="assets/img/ybLogo.png" alt=""> -->
                 <div class="ybLogo"></div>
-
             </a>
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <!-- <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
-            </button>
+            </button> -->
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+              <span class="navbar-toggler-bar" style="background: #66615b;"></span>
+              <span class="navbar-toggler-bar" style="background: #66615b;"></span>
+              <span class="navbar-toggler-bar" style="background: #66615b;"></span>
+          </button>
         </div>
         <div class="navbar-collapse" id="navbarToggler">
-            <!-- <ul _ngcontent-fyc-c1="" class="navbar-nav ml-auto">
-                <div _ngcontent-fyc-c1="" class="nav-item dropdown" ngbdropdown="">
-                    <div _ngcontent-fyc-c1="" aria-haspopup="true" class="nav-link dropdown-toggle dropdown-toggle"
-                     ngbdropdowntoggle="" aria-expanded="false">Components</div>
-                     <div _ngcontent-fyc-c1="" class="dropdown-menu dropdown-menu-right dropdown-danger"
-                      ngbdropdownmenu=""><a _ngcontent-fyc-c1="" class="dropdown-item" ngbdropdownitem=""
-                       href="#/components"><i _ngcontent-fyc-c1="" class="nc-icon nc-tile-56"><
-                           /i>All Components</a></div></div>
-                        </ul> -->
             <ul class="navbar-nav ml-auto">
+                <a href="javascript:void(0)" class="hidden closebtn" id="closebtnid" (click)="sidebarClose()">&times;</a>
                 <li class="nav-item">
                     <a [routerLink]="['/']" class="nav-link">Home </a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="#AboutUs" class="nav-link">
-                       About Us</a>
-                </li> -->
                 <div class="nav-item dropdown" ngbDropdown>
                     <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">About Us</div>
                     <div class="dropdown-menu dropdown-menu-right" style="height: auto!important;" ngbDropdownMenu>

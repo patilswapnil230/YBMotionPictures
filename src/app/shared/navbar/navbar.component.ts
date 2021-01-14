@@ -19,24 +19,30 @@ export class NavbarComponent implements OnInit {
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
     }
     sidebarOpen() {
-        const toggleButton = this.toggleButton;
-        const html = document.getElementsByTagName('html')[0];
-        // console.log(html);
-        // console.log(toggleButton, 'toggle');
-
-        setTimeout(function(){
-            toggleButton.classList.add('toggled');
-        }, 500);
-        html.classList.add('nav-open');
-
+        // const toggleButton = this.toggleButton;
+        // const html = document.getElementsByTagName('html')[0];
+        // setTimeout(function(){
+        //     toggleButton.classList.add('toggled');
+        // }, 500);
+        // html.classList.add('nav-open');
+        // this.sidebarVisible = true; 
+        const navBarToggler = document.getElementById('navbarToggler');
+        navBarToggler.classList.add('nav-open-panel');
+        const close = document.getElementById('closebtnid');
+        close.classList.remove('hidden');
         this.sidebarVisible = true;
     };
     sidebarClose() {
-        const html = document.getElementsByTagName('html')[0];
-        // console.log(html);
-        this.toggleButton.classList.remove('toggled');
+        // const html = document.getElementsByTagName('html')[0];
+        // // console.log(html);
+        // this.toggleButton.classList.remove('toggled');
+        // this.sidebarVisible = false;
+        // html.classList.remove('nav-open');
+        const navBarToggler = document.getElementById('navbarToggler');
         this.sidebarVisible = false;
-        html.classList.remove('nav-open');
+        navBarToggler.classList.remove('nav-open-panel');
+        const close = document.getElementById('closebtnid');
+        close.classList.add('hidden');
     };
     sidebarToggle() {
         // const toggleButton = this.toggleButton;
