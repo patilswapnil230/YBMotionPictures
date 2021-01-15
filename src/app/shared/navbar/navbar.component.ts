@@ -77,4 +77,20 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+    toggleMenu(btn: any, collapseSection: any) {
+        const collapseOneBtn = document.getElementById(btn);
+        const collapseOne = document.getElementById(collapseSection);
+        if(collapseOneBtn.children[0].classList.toString().indexOf('fa-plus') != -1) {
+            collapseOneBtn.children[0].classList.add('fa-minus');
+            collapseOneBtn.children[0].classList.remove('fa-plus');
+            collapseOne.classList.remove('hidden');
+            collapseOne.classList.add('show');
+        }else {
+            collapseOneBtn.children[0].classList.add('fa-plus');
+            collapseOneBtn.children[0].classList.remove('fa-minus');
+            collapseOne.classList.add('hidden');
+            collapseOne.classList.remove('show');
+        }
+
+    }
 }

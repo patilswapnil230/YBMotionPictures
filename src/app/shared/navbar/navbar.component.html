@@ -9,8 +9,7 @@
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
             </button> -->
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
               <span class="navbar-toggler-bar" style="background: #66615b;"></span>
               <span class="navbar-toggler-bar" style="background: #66615b;"></span>
               <span class="navbar-toggler-bar" style="background: #66615b;"></span>
@@ -24,21 +23,36 @@
                 </li>
                 <div class="nav-item dropdown" ngbDropdown>
                     <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">About Us</div>
-                    <div class="dropdown-menu dropdown-menu-right" style="height: auto!important;" ngbDropdownMenu>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown-border" style="height: auto!important;" ngbDropdownMenu>
 
-                        <a class="dropdown-item" [routerLink]="['/aboutus']">About YBMP</a>
-                        <a class="dropdown-item">Gallery</a>
-                        <a class="dropdown-item">Careers</a></div>
+                        <a class="dropdown-item navbar-anchor-a" [routerLink]="['/aboutus']">About YBMP</a>
+                        <a class="dropdown-item navbar-anchor-a">Gallery</a>
+                        <a class="dropdown-item navbar-anchor-a">Careers</a></div>
                 </div>
                 <div class="nav-item dropdown" ngbDropdown>
                     <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">Projects</div>
-                    <div class="dropdown-menu dropdown-menu-right" style="height: auto!important;" ngbDropdownMenu>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown-border" style="height: auto!important;" ngbDropdownMenu>
 
-                        <a class="dropdown-item">Upcoming</a>
-                        <a class="dropdown-item">In Progress</a>
-                        <a class="dropdown-item">Completed</a></div>
+                        <a class="dropdown-item navbar-anchor-a">Upcoming</a>
+                        <a class="dropdown-item navbar-anchor-a">In Progress</a>
+                        <a class="dropdown-item navbar-anchor-a">Completed</a></div>
                 </div>
+                <!-- <div class="nav-item">
+                    <div aria-haspopup="true" class="nav-link navigation-accordion-btn" id="collapseOneBtn" (click)="toggleMenu('collapseOneBtn','collapseOne')"> <i class="fa fa-plus"></i> About Us</div>
+                    <div id="collapseOne" class="dropdown-menu dropdown-menu-right navbar-dropdown-border navigation-accordion" style="height: auto!important;">
 
+                        <a class="dropdown-item navbar-anchor-a" [routerLink]="['/aboutus']">About YBMP</a>
+                        <a class="dropdown-item navbar-anchor-a">Gallery</a>
+                        <a class="dropdown-item navbar-anchor-a">Careers</a></div>
+                </div>
+                <div class="nav-item">
+                    <div aria-haspopup="true" class="nav-link navigation-accordion-btn" id="collapseTwoBtn" (click)="toggleMenu('collapseTwoBtn','collapseTwo')"> <i class="fa fa-plus"></i> Projects</div>
+                    <div id="collapseTwo" class="dropdown-menu dropdown-menu-right navbar-dropdown-border navigation-accordion" style="height: auto!important;">
+
+                        <a class="dropdown-item navbar-anchor-a">Upcoming</a>
+                        <a class="dropdown-item navbar-anchor-a">In Progress</a>
+                        <a class="dropdown-item navbar-anchor-a">Completed</a></div>
+                </div> -->
                 <li class="nav-item">
                     <a [routerLink]="['/contactus']" class="nav-link" target="_blank">
                         Contact Us</a>
