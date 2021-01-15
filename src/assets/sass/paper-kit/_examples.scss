@@ -264,30 +264,44 @@
 @media (min-width: 320px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 80px;
-            width: 135px;
+            height: 123px;
+            width: 307px;
             // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
             background-repeat: no-repeat;
             background-size: contain;
-            // margin-top: 90px;
         }
     }
 }
 
-// @media (min-width: 576px) {
-//     .angular-logo {
-//         .ybbannerlogo {
-//         max-width: 400px;
-//         display: none;    height: 80%;
-//         width: 80%;
-//     }
-//     }
-// }
+@media (min-width: 576px) {
+    .angular-logo {
+        .ybbannerlogo {
+            height: 123px;
+            width: 307px;
+            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 235px;
-            width: 520px;
+            height: 246px;
+            width: 618px;
+            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .angular-logo {
+        .ybbannerlogo {
+            height: 246px;
+            width: 618px;
             background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -304,15 +318,6 @@
     }
 }
 
-// @media (min-width: 992px) {
-//     .angular-logo {
-//         .ybbannerlogo {
-//             display: block;
-//         max-width: 800px;    height: 80%;
-//         width: 80%;
-//     }
-//     }
-// }
 @media (min-width: 1200px) {
     .angular-logo {
         .ybbannerlogo {
@@ -382,13 +387,62 @@
     }
 }
 
-.page-carousel-content {
-    max-width: 75% !important;
-    .row {
-        margin: 0px;
+@media (min-width:1200px, 992px, 425px) {
+    .page-carousel-content {
+        max-width: 75% !important;
+        .row {
+            margin: 0px;
+        }
     }
 }
 
+//page-carousel-content
+@media (min-width:320px) {
+    .page-carousel-content {
+        max-width: 89% !important;
+        .row {
+            margin: 0px;
+        }
+    }
+}
+
+@media (min-width:425px) {
+    .page-carousel-content {
+        max-width: 78% !important;
+        .row {
+            margin: 0px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .page-carousel-content {
+        max-width: 89% !important;
+        .row {
+            margin: 0px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .page-carousel-content {
+        max-width: 66% !important;
+        .row {
+            margin: 0px;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .page-carousel-content {
+        max-width: 75% !important;
+        .row {
+            margin: 0px;
+        }
+    }
+}
+
+// page-carousel-content End
 .page-aboutus-content {
     max-width: 85% !important;
     .row {
