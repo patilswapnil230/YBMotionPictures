@@ -265,8 +265,8 @@
     .angular-logo {
         .ybbannerlogo {
             height: 123px;
-            width: 307px;
-            // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
+            width: 250px;
+            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
             background-repeat: no-repeat;
             background-size: contain;
         }
@@ -309,15 +309,6 @@
     }
 }
 
-@media screen and (max-width: 991px) {
-    .dropdown.show .dropdown-menu {
-        display: block;
-        position: static;
-        float: none;
-        background: 0 0!important;
-    }
-}
-
 @media (min-width: 1200px) {
     .angular-logo {
         .ybbannerlogo {
@@ -328,6 +319,15 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dropdown.show .dropdown-menu {
+        display: block;
+        position: static;
+        float: none;
+        background: 0 0!important;
     }
 }
 
@@ -391,7 +391,7 @@
     .page-carousel-content {
         max-width: 75% !important;
         .row {
-            margin: 0px;
+            // margin: 0px;
         }
     }
 }
@@ -401,7 +401,7 @@
     .page-carousel-content {
         max-width: 89% !important;
         .row {
-            margin: 0px;
+            // margin: 0px;
         }
     }
 }
@@ -410,7 +410,7 @@
     .page-carousel-content {
         max-width: 78% !important;
         .row {
-            margin: 0px;
+            // margin: 0px;
         }
     }
 }
@@ -419,7 +419,7 @@
     .page-carousel-content {
         max-width: 89% !important;
         .row {
-            margin: 0px;
+            // margin: 0px;
         }
     }
 }
@@ -428,7 +428,7 @@
     .page-carousel-content {
         max-width: 66% !important;
         .row {
-            margin: 0px;
+            // margin: 0px;
         }
     }
 }
@@ -437,7 +437,7 @@
     .page-carousel-content {
         max-width: 75% !important;
         .row {
-            margin: 0px;
+            // margin: 0px;
         }
     }
 }
@@ -446,7 +446,7 @@
 .page-aboutus-content {
     max-width: 85% !important;
     .row {
-        margin: 0px;
+        // margin: 0px;
     }
 }
 
@@ -493,3 +493,67 @@
     @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
     display: block;
 }
+
+// For About us
+@media (min-width: 320px) {
+    .line-logo {
+        .aboutuslinelogo {
+            height: 56px;
+            width: 280px;
+            background-image: url(/dist/assets/img/aboutus/Line480.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .line-logo {
+        .aboutuslinelogo {
+            height: 56px;
+            width: 410px;
+            background-image: url(/dist/assets/img/aboutus/Line480.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .line-logo {
+        .aboutuslinelogo {
+            height: 74px;
+            width: 849px;
+            background-image: url(/dist/assets/img/aboutus/Line1024.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .line-logo {
+        .aboutuslinelogo {
+            height: 74px;
+            width: 849px;
+            background-image: url(/dist/assets/img/aboutus/Line1024.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .line-logo {
+        .aboutuslinelogo {
+            display: block;
+            height: 115px;
+            width: 1304px;
+            background-image: url(/dist/assets/img/aboutus/Line1366.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+// End

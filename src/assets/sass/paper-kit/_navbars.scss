@@ -51,7 +51,7 @@
             line-height: 1.6;
             margin: $navbar-margin-a;
             padding: $navbar-padding-a;
-            opacity: .8;
+            opacity: 1;
             font-size: $font-size-small;
             text-transform: uppercase;
             color: $default-color;
@@ -178,6 +178,7 @@
         .nav-item .nav-link:focus {
             background-color: transparent;
             color: $yellow-menu-color;
+            font-weight: 500;
             @include opacity(1);
         }
         .nav .nav-item a.btn:hover {
@@ -599,4 +600,12 @@
     .navigation-accordion-btn {
         display: block;
     }
+}
+
+.burger-fixed-top {
+    position: fixed;
+    top: 30px;
+    right: 0;
+    // left: 0;
+    z-index: 1030;
 }
