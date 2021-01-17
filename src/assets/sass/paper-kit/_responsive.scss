@@ -392,13 +392,13 @@
                 margin: 0px 0px;
                 color: $white-color !important;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: $font-size-small;
                 line-height: $line-height-general;
                 padding: 15px 0;
                 &:hover,
                 &:active {
-                    color: $white-color !important;
+                    color: #ffd800 !important;
                 }
             }
         }
@@ -421,8 +421,8 @@
     .nav-open-panel {
         @include transform-translate-x(0px);
         display: block;
-        padding: 11px 11px 60px 20px;
-        width: 200px;
+        padding: 11px 38px 60px 20px;
+        width: 250px;
     }
     .nav-open {
         & .navbar-collapse {
@@ -446,7 +446,7 @@
         float: left;
     }
     .burger-fixed-top .navbar-collapse {
-        background-color: #441917;
+        background-color: #000000;
         // width: 100%;
         float: left;
     }
@@ -688,8 +688,9 @@
 
 .closebtn {
     position: absolute;
-    top: -18px;
-    right: 12px;
+    top: 0px;
+    right: 15px;
     font-size: 43px;
     margin-left: 50px;
+    color: $white-color;
 }

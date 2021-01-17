@@ -33,11 +33,31 @@
           </button>-->
                 <div class="navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ml-auto">
-                        <a href="javascript:void(0)" class="hidden closebtn" id="closebtnid" (click)="sidebarClose()">&times;</a>
-                        <li class="nav-item">
+                        <div style="margin-top: 100px;">
+                            <a href="javascript:void(0)" class="hidden closebtn nav-close" id="closebtnid" (click)="sidebarClose()">&times;</a>
+
+                        </div>
+                        <li class="nav-item navbar-menu-border">
                             <a [routerLink]="['/']" class="nav-link">Home </a>
                         </li>
-                        <div class="nav-item dropdown" ngbDropdown>
+
+                        <div class="nav-item navbar-menu-border">
+                            <div aria-haspopup="true" class="nav-link navigation-accordion-btn mobileview" id="collapseOneBtn" (click)="toggleMenu('collapseOneBtn','collapseOne')"> <i class="fa fa-plus"></i> About Us</div>
+                            <div id="collapseOne" class="dropdown-menu dropdown-menu-right navbar-dropdown-border navigation-accordion" style="height: auto!important;">
+
+                                <a class="dropdown-item navbar-anchor-a" [routerLink]="['/aboutus']">About YBMP</a>
+                                <a class="dropdown-item navbar-anchor-a">Gallery</a>
+                                <a class="dropdown-item navbar-anchor-a">Careers</a></div>
+                        </div>
+                        <div class="nav-item navbar-menu-border">
+                            <div aria-haspopup="true" class="nav-link navigation-accordion-btn mobileview" id="collapseTwoBtn" (click)="toggleMenu('collapseTwoBtn','collapseTwo')"> <i class="fa fa-plus"></i> Projects</div>
+                            <div id="collapseTwo" class="dropdown-menu dropdown-menu-right navbar-dropdown-border navigation-accordion" style="height: auto!important;">
+
+                                <a class="dropdown-item navbar-anchor-a">Upcoming</a>
+                                <a class="dropdown-item navbar-anchor-a">In Progress</a>
+                                <a class="dropdown-item navbar-anchor-a">Completed</a></div>
+                        </div>
+                        <div class="nav-item dropdown navbar-menu-border webview" ngbDropdown>
                             <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">About Us</div>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown-border" style="height: auto!important;" ngbDropdownMenu>
 
@@ -45,7 +65,7 @@
                                 <a class="dropdown-item navbar-anchor-a">Gallery</a>
                                 <a class="dropdown-item navbar-anchor-a">Careers</a></div>
                         </div>
-                        <div class="nav-item dropdown" ngbDropdown>
+                        <div class="nav-item dropdown navbar-menu-border webview" ngbDropdown>
                             <div aria-haspopup="true" class="nav-link dropdown-toggle" ngbDropdownToggle aria-expanded="true">Projects</div>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown-border" style="height: auto!important;" ngbDropdownMenu>
 
@@ -53,23 +73,7 @@
                                 <a class="dropdown-item navbar-anchor-a">In Progress</a>
                                 <a class="dropdown-item navbar-anchor-a">Completed</a></div>
                         </div>
-                        <!-- <div class="nav-item">
-                    <div aria-haspopup="true" class="nav-link navigation-accordion-btn" id="collapseOneBtn" (click)="toggleMenu('collapseOneBtn','collapseOne')"> <i class="fa fa-plus"></i> About Us</div>
-                    <div id="collapseOne" class="dropdown-menu dropdown-menu-right navbar-dropdown-border navigation-accordion" style="height: auto!important;">
-
-                        <a class="dropdown-item navbar-anchor-a" [routerLink]="['/aboutus']">About YBMP</a>
-                        <a class="dropdown-item navbar-anchor-a">Gallery</a>
-                        <a class="dropdown-item navbar-anchor-a">Careers</a></div>
-                </div>
-                <div class="nav-item">
-                    <div aria-haspopup="true" class="nav-link navigation-accordion-btn" id="collapseTwoBtn" (click)="toggleMenu('collapseTwoBtn','collapseTwo')"> <i class="fa fa-plus"></i> Projects</div>
-                    <div id="collapseTwo" class="dropdown-menu dropdown-menu-right navbar-dropdown-border navigation-accordion" style="height: auto!important;">
-
-                        <a class="dropdown-item navbar-anchor-a">Upcoming</a>
-                        <a class="dropdown-item navbar-anchor-a">In Progress</a>
-                        <a class="dropdown-item navbar-anchor-a">Completed</a></div>
-                </div> -->
-                        <li class="nav-item">
+                        <li class="nav-item navbar-menu-border">
                             <a [routerLink]="['/contactus']" class="nav-link" target="_blank">
                         Contact Us</a>
                         </li>
