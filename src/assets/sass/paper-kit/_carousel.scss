@@ -100,12 +100,12 @@
 }
 
 .carousel-indicators li {
-    background-color: $white-color;
+    background-color: $corosel-icon-color;
     border: 0 none;
 }
 
 .carousel-indicators .active {
-    background-color: $corosel-icon-color;
+    background-color: $white-color;
 }
 
 .page-carousel:hover {
@@ -134,5 +134,29 @@ ngb-carousel {
     }
     .carousel-text-font {
         // font-size: 20px !important;
+    }
+}
+
+//
+.carousel-indicators {
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // z-index: 15;
+    // display: flex;
+    // justify-content: center;
+    // padding-left: 0; // override <ol> default
+    // // Use the .carousel-control's width as margin so we don't overlay those
+    // margin-right: $carousel-control-width;
+    // margin-left: $carousel-control-width;
+    // list-style: none;
+    li {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+    }
+    .active {
+        //   opacity: 1;
     }
 }
