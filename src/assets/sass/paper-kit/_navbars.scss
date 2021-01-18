@@ -60,10 +60,18 @@
             margin: $navbar-margin-a-btn;
             padding: 9px;
         }
-        .dropdown-menu {
-            // border-radius: $border-radius-extreme;
-            border-radius: 0px !important;
-            margin-top: -50px;
+        
+        .dropdown:hover {
+            .dropdown-menu {
+                    visibility: visible !important;
+                    opacity: 1!important;
+                    }
+        }
+        .dropdown:hover {
+            .dropdown-menu {
+                    visibility: visible !important;
+                    opacity: 1!important;
+                    }
         }
     }
     .navbar-collapse {
