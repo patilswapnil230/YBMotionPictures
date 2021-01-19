@@ -264,11 +264,12 @@
 @media (min-width: 320px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 123px;
-            width: 250px;
-            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
+            // height: 123px;
+            // width: 250px;
+            // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
         }
     }
 }
@@ -276,11 +277,12 @@
 @media (min-width: 576px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 123px;
-            width: 307px;
-            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
+            // height: 123px;
+            // width: 307px;
+            // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo480.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
         }
     }
 }
@@ -288,11 +290,12 @@
 @media (min-width: 768px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 246px;
-            width: 618px;
-            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
+            // height: 246px;
+            // width: 618px;
+            // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
         }
     }
 }
@@ -300,11 +303,12 @@
 @media (min-width: 992px) {
     .angular-logo {
         .ybbannerlogo {
-            height: 246px;
-            width: 618px;
-            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
+            // height: 246px;
+            // width: 618px;
+            // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1024.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
         }
     }
 }
@@ -312,12 +316,13 @@
 @media (min-width: 1200px) {
     .angular-logo {
         .ybbannerlogo {
-            display: block;
-            height: 364px;
-            width: 959px;
-            background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1366.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1366.png);
+            // display: block;
+            // height: 364px;
+            // width: 959px;
+            // background-image: url(/dist/assets/img/ybBannerLogo/ybBannerLogo1366.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
         }
     }
 }
@@ -387,19 +392,10 @@
     }
 }
 
-@media (min-width:1200px, 992px, 425px) {
-    .page-carousel-content {
-        max-width: 75% !important;
-        .row {
-            // margin: 0px;
-        }
-    }
-}
-
 //page-carousel-content
 @media (min-width:320px) {
     .page-carousel-content {
-        max-width: 89% !important;
+        max-width: 100% !important;
         .row {
             // margin: 0px;
         }
@@ -408,7 +404,7 @@
 
 @media (min-width:425px) {
     .page-carousel-content {
-        max-width: 78% !important;
+        max-width: 100% !important;
         .row {
             // margin: 0px;
         }
@@ -417,7 +413,7 @@
 
 @media (min-width:768px) {
     .page-carousel-content {
-        max-width: 89% !important;
+        max-width: 94% !important;
         .row {
             // margin: 0px;
         }
@@ -426,7 +422,7 @@
 
 @media (min-width:992px) {
     .page-carousel-content {
-        max-width: 66% !important;
+        max-width: 100% !important;
         .row {
             // margin: 0px;
         }
@@ -495,78 +491,152 @@
 }
 
 // For About us
+.aboutus-content {
+    // min-height: 1000px;
+}
+
 @media (min-width: 320px) {
     .line-logo {
         .aboutuslinelogo {
-            height: 56px;
-            width: 280px;
             background-image: url(/dist/assets/img/aboutus/Line480.png);
+            height: 56px;
+            width: auto;
+            content: none;
+            // content: url(/dist/assets/img/aboutus/Line480.png);
+            // height: 56px;
+            // width: 280px;
+            // background-image: url(/dist/assets/img/aboutus/Line480.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            // background-size: contain;
         }
+    }
+    .aboutus-content {
+        padding-top: 3%;
+        color: #feebca;
+        line-height: 1.5;
+        width: 90%;
+        font-size: 14px;
     }
 }
 
 @media (min-width: 576px) {
     .line-logo {
         .aboutuslinelogo {
-            height: 56px;
-            width: 410px;
             background-image: url(/dist/assets/img/aboutus/Line480.png);
+            height: 56px;
+            width: auto;
+            content: none;
+            // content: url(/dist/assets/img/aboutus/Line480.png);
+            // height: 56px;
+            // width: 410px;
+            // background-image: url(/dist/assets/img/aboutus/Line480.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            // background-size: contain;
         }
+    }
+    .aboutus-content {
+        padding-top: 3%;
+        color: #feebca;
+        line-height: 1.5;
+        width: 90%;
+        font-size: 14px;
     }
 }
 
 @media (min-width: 768px) {
     .line-logo {
         .aboutuslinelogo {
-            height: 74px;
-            width: 849px;
             background-image: url(/dist/assets/img/aboutus/Line1024.png);
+            height: 74px;
+            width: auto;
+            content: none;
+            // content: url(/dist/assets/img/aboutus/Line1024.png);
+            // height: 74px;
+            // width: 849px;
+            // background-image: url(/dist/assets/img/aboutus/Line1024.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            // background-size: contain;
         }
+    }
+    .aboutus-content {
+        padding-top: 3%;
+        color: #feebca;
+        line-height: 1.5;
+        width: 90%;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 992px) {
     .line-logo {
         .aboutuslinelogo {
-            height: 74px;
-            width: 849px;
             background-image: url(/dist/assets/img/aboutus/Line1024.png);
+            height: 74px;
+            width: auto;
+            content: none;
+            // content: url(/dist/assets/img/aboutus/Line1024.png);
+            // height: 74px;
+            // width: 849px;
+            // background-image: url(/dist/assets/img/aboutus/Line1024.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            // background-size: contain;
         }
+    }
+    .aboutus-content {
+        padding-top: 3%;
+        color: #feebca;
+        line-height: 1.5;
+        width: 90%;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 1200px) {
     .line-logo {
         .aboutuslinelogo {
-            display: block;
-            height: 115px;
-            width: 1304px;
             background-image: url(/dist/assets/img/aboutus/Line1366.png);
+            height: 115px;
+            width: auto;
+            content: none;
+            // content: url(/dist/assets/img/aboutus/Line1366.png);
+            // display: block;
+            // height: 115px;
+            // width: 1304px;
+            // background-image: url(/dist/assets/img/aboutus/Line1366.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            // background-size: contain;
         }
+    }
+    .aboutus-content {
+        padding-top: 3%;
+        color: #feebca;
+        line-height: 1.5;
+        width: 90%;
+        font-size: 18px;
     }
 }
 
 // End
 .home-bg {
-    background-image: url(/dist/assets/img/ybmotionBg.png);
-    width: 100%;
-    max-width: 100%;
+    // background-image: url(/dist/assets/img/ybmotionBg.png);
+    // width: 100%;
+    // max-width: 100%;
     // background-repeat: no-repeat;
     // background-size: contain;
+    // min-height: 558px;
+    background: url(/dist/assets/img/ybmotionBg.png) no-repeat;
+    background-size: contain;
 }
 
 .inner-bg {
-    background-image: url(/dist/assets/img/ybmotionBg_inner.png);
+    // background-image: url(/dist/assets/img/ybmotionBg_inner.png);
+    // width: 100%;
+    // max-width: 100%;
     // background-repeat: no-repeat;
     // background-size: contain;
+    // min-height: 558px;
+    // background: url(/dist/assets/img/ybmotionBg_inner.png) no-repeat center fixed;
+    // background-size: cover;
+    background: url(/dist/assets/img/ybmotionBg_inner.png) no-repeat;
+    background-size: contain;
 }

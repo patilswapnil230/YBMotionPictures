@@ -306,11 +306,12 @@
     // }
     .navbar-brand {
         .ybLogo {
-            width: 183px;
-            height: 51px;
-            background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // width: 183px;
+            // height: 51px;
+            // background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
             margin-top: 15px;
         }
     }
@@ -319,11 +320,12 @@
 @media (min-width: 576px) {
     .navbar-brand {
         .ybLogo {
-            width: 183px;
-            height: 51px;
-            background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // width: 183px;
+            // height: 51px;
+            // background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
             margin-top: 15px;
         }
     }
@@ -335,11 +337,12 @@
     // }
     .navbar-brand {
         .ybLogo {
-            width: 183px;
-            height: 51px;
-            background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            content: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // width: 183px;
+            // height: 51px;
+            // background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
             margin-top: 15px;
         }
     }
@@ -348,12 +351,13 @@
 @media (min-width: 992px) {
     .navbar-brand {
         .ybLogo {
-            width: 316px;
-            height: 84px;
-            background-image: url(/dist/assets/img/ybLogo/ybLogo1024.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-top: 15px;
+            content: url(/dist/assets/img/ybLogo/ybLogo1024.png);
+            // width: 316px;
+            // height: 84px;
+            // background-image: url(/dist/assets/img/ybLogo/ybLogo1024.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            margin-top: 26px;
         }
     }
 }
@@ -361,12 +365,13 @@
 @media (min-width: 1200px) {
     .navbar-brand {
         .ybLogo {
-            width: 340px;
-            height: 90px;
-            background-image: url(/dist/assets/img/ybLogo/ybLogo1366.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-top: 15px;
+            content: url(/dist/assets/img/ybLogo/ybLogo1366.png);
+            // width: 340px;
+            // height: 90px;
+            // background-image: url(/dist/assets/img/ybLogo/ybLogo1366.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            margin-top: 26px;
         }
     }
 }

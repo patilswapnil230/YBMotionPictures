@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'app/shared/service/shared.service';
 
 @Component({
   selector: 'app-about-ybmp',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutYbmpComponent implements OnInit {
 
-  constructor() { }
+  constructor(public sharedService: SharedService) { }
 
   ngOnInit(): void {
+    this.sharedService.refreshBackground('inner-bg');
+
   }
 
 }
