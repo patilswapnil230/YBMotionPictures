@@ -35,18 +35,18 @@ export class AppComponent implements OnInit {
             }
             this.navbar.sidebarClose();
         });
-        this.renderer.listen('window', 'scroll', (event) => {
-            const number = window.scrollY;
-            if (number > 2 || window.pageYOffset > 2) {
-                // add logic
-                navbar.classList.remove('navbar-transparent');
-                navbar.classList.add('navbar-hidden');
-            } else {
-                // remove logic
-                navbar.classList.add('navbar-transparent');
-                navbar.classList.remove('navbar-hidden');
-            }
-        });
+        // this.renderer.listen('window', 'scroll', (event) => {
+        //     const number = window.scrollY;
+        //     if (number > 2 || window.pageYOffset > 2) {
+        //         // add logic
+        //         navbar.classList.remove('navbar-transparent');
+        //         navbar.classList.add('navbar-hidden');
+        //     } else {
+        //         // remove logic
+        //         navbar.classList.add('navbar-transparent');
+        //         navbar.classList.remove('navbar-hidden');
+        //     }
+        // });
         var ua = window.navigator.userAgent;
         var trident = ua.indexOf('Trident/');
         if (trident > 0) {
