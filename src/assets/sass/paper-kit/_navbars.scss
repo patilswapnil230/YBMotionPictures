@@ -301,12 +301,23 @@
 }
 
 @media (min-width: 320px) {
-    // .navbar-toggler {
-    //     margin-top: -60px;
-    // }
     .navbar-brand {
         .ybLogo {
-            content: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            content: url(/dist/assets/img/ybLogo/ybLogo425.png);
+            // width: 183px;
+            // height: 51px;
+            // background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (min-width: 425px) {
+    .navbar-brand {
+        .ybLogo {
+            content: url(/dist/assets/img/ybLogo/ybLogo425.png);
             // width: 183px;
             // height: 51px;
             // background-image: url(/dist/assets/img/ybLogo/ybLogo480.png);
