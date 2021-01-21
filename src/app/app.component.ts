@@ -18,14 +18,17 @@ export class AppComponent implements OnInit {
     bgclassName = 'home-bg';
     constructor( private renderer : Renderer2, private router: Router, @Inject(DOCUMENT,) 
     private document: any, private element : ElementRef, public location: Location
-    ,public sharedService: SharedService) {}
+    ) {
+        // ,public sharedService: SharedService
+
+    }
 
     // public var;
     ngOnInit() {
         // this.var = this.sharedService.changebackgroundImage;
-        this.sharedService.changebackgroundImage.subscribe(x=>{
-            this.bgclassName = x;
-        });
+        // this.sharedService.changebackgroundImage.subscribe(x=>{
+        //     this.bgclassName = x;
+        // });
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
         this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
             if (window.outerWidth > 991) {

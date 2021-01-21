@@ -8,11 +8,11 @@ import { SharedService } from 'app/shared/service/shared.service';
 })
 export class AboutYbmpComponent implements OnInit {
 
-  constructor(public sharedService: SharedService) { }
-
-  ngOnInit(): void {
-    this.sharedService.refreshBackground('inner-bg');
-
+  constructor(public sharedService: SharedService) {   
+    var mainDiv = document.getElementById('mainDiv');
+    mainDiv.style.backgroundImage = "url('dist/assets/img/ybmotionBg_inner.png')";
   }
+
+  ngOnInit(): void {}
 
 }

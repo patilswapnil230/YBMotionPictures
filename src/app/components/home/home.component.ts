@@ -11,7 +11,9 @@ export class HomeComponent implements OnInit {
   constructor(public sharedService: SharedService) { }
 
   ngOnInit(): void {
-    this.sharedService.refreshBackground('home-bg');
+    // this.sharedService.refreshBackground('home-bg');
+    var mainDiv = document.getElementById('mainDiv');
+    mainDiv.style.backgroundImage = "url('dist/assets/img/ybmotionBg.png')";
   }
 
 }
