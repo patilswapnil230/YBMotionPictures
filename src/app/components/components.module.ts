@@ -16,6 +16,7 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { AboutYbmpComponent } from './aboutus/about-ybmp/about-ybmp.component';
 import { HomeComponent } from './home/home.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { HomeComponent } from './home/home.component';
         NgbdModalComponent,
         NgbdModalContent,
         AboutYbmpComponent,
-        HomeComponent
+        HomeComponent,
+        ContactUsComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

@@ -10,13 +10,14 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutYbmpComponent } from './components/aboutus/about-ybmp/about-ybmp.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',             component: HomeComponent },
     { path: 'aboutus',             component: AboutYbmpComponent },
     { path: 'projects',             component: HomeComponent },
-    { path: 'contactus',             component: HomeComponent },
+    { path: 'contactus',             component: ContactUsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
