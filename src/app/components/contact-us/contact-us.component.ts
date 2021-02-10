@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'app/shared/service/shared.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactUsComponent implements OnInit {
   getrecordsData : any={};
 
-  constructor() {  var mainDiv = document.getElementById('mainDiv');
+  constructor(private sharedService: SharedService) {  var mainDiv = document.getElementById('mainDiv');
   mainDiv.style.backgroundImage = "url('dist/assets/img/ybmotionBg_inner.png')";}
 
   ngOnInit(): void {
@@ -16,6 +17,26 @@ export class ContactUsComponent implements OnInit {
 
   SendData(){
     debugger;
-    alert(this.getrecordsData.Name + ' ' + this.getrecordsData.Email+ ' ' + this.getrecordsData.Message)
+    // alert(this.getrecordsData.Name + ' ' + this.getrecordsData.Email+ ' ' + this.getrecordsData.Message)
+    let user = {
+      name: 'Sumit Sutar',
+      email: 'sutar.sumit32.ss@gmail.com'
+    }
+    this.sharedService.sendEmail("http://localhost:3000/sendmail", user).subscribe(
+      data => {
+        let res:any = data; 
+        console.log(
+          `👏 > 👏 > 👏 > 👏 ${user.name} is successfully register and mail has been sent and the message id is ${res.messageId}`
+        );
+      },
+      err => {
+        console.log(err);
+      },() => {
+      }
+    );
+
+    
   }
+
+  
 }
