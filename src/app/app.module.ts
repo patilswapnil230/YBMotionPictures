@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { SharedService } from './shared/service/shared.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { SharedService } from './shared/service/shared.service';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]
